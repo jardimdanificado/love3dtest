@@ -19,11 +19,11 @@ local moon = g3d.newModel("assets/sphere.obj", "assets/moon.png", {4,5,0}, nil, 
 --local background = g3d.newModel("assets/sphere.obj", "assets/starfield.png", nil, nil, 500)
 local timer = 0
 
---local myShader = love.graphics.newShader(g3d.shaderpath, "data/luzfixa.frag") not configurable
-local myShader = love.graphics.newShader(g3d.shaderpath, "data/luzposicionavel.frag")
-myShader:send("lightPosition",{32,16,32})
-myShader:send("light_dist",256)
-myShader:send("ambient",0.3)
+local myShader = love.graphics.newShader(g3d.shaderpath, "data/shaders/luzfixa.frag") -- not configurable
+
+--myShader:send("lightPosition",{32,16,32})
+--myShader:send("light_dist",256)
+--myShader:send("ambient",0.3)
 
 world = republica.world(options.mapsize,options.mapquality,options.mappolish)
 
