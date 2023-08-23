@@ -1,8 +1,8 @@
-local republica = require("src.republicanova")
+local republica = require("republicanova")
 local exit = false
 local options = require('data.config')
 local mocegui = require "mocegui"
-local util = require "mocegui.util"
+local util = mocegui.util
 
 local g3d = require "g3d"
 
