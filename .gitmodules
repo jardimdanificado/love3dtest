@@ -1,0 +1,3 @@
+[submodule "mocegui"]
+	path = mocegui
+	url = https://github.com/jardimdanificado/mocegui
